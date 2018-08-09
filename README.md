@@ -16,3 +16,5 @@ Alternatively, another `AudioSource` can be supplied if you want to get input di
 Create the four blend shapes for your character as described in the paper. To do this, you can simply create 1-frame-animations in the Live2D Cubism editor and export them to Unity. After importing them, set them up as an additional animation layer (blending: override, weight: 1). This layer should by default play a blend-tree animation set up like this:
 
 ![Example](https://raw.githubusercontent.com/DenchiSoft/Live2DFrequencyLipSync/master/animator_example.png "Example")
+
+The parameters for `MouthShapeAnalyzer` have to be set individually for each characters, because of differences in voice pitch. I recommend just trying out different values until you find something that looks good.  
